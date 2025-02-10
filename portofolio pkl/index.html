@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Raffy</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">My Portfolio</h1>
+            <div class="hidden md:flex space-x-6 mx-auto" id="nav-menu">
+                <a href="#home" class="nav-link hover:text-gray-400">Home</a>
+                <a href="#about" class="nav-link hover:text-gray-400">About</a>
+                <a href="#projects" class="nav-link hover:text-gray-400">My Projects</a>
+                <a href="#contact" class="nav-link hover:text-gray-400">Contact</a>
+            </div>
+            <a href="assets/cvpkl1.pdf" download class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Download CV</a>
+            <button id="menu-btn" class="md:hidden text-xl">☰</button>
+        </div>
+        <div class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4" id="mobile-menu">
+            <a href="#home" class="block py-2 hover:text-gray-400">Home</a>
+            <a href="#about" class="block py-2 hover:text-gray-400">About</a>
+            <a href="#projects" class="block py-2 hover:text-gray-400">My Projects</a>
+            <a href="#contact" class="block py-2 hover:text-gray-400">Contact</a>
+            <a href="assets/cvpkl1.pdf" download class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Download CV</a>
+        </div>
+    </nav>
+<!-- Home Section -->
+<section id="home" class="min-h-screen flex flex-col items-center justify-center bg-gray-800 px-6 relative">
+    <!-- Profile Photo -->
+    <div class="mb-8">
+        <img src="assets/pp-removebg-preview.png" alt="Your Photo" class="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-lg">
+    </div>
+
+    <!-- Centered Content -->
+    <d class="text-center space-y-6 max-w-md">
+        <!-- Title and Description -->
+        <div>
+            <h2 class="text-4xl font-bold text-white">Welcome to My Portfolio</h2>
+            <p class="text-lg text-gray-300 mt-2">Explore my work and skills</p>
+        </div>
+
+        <!-- Technology Icons -->
+        <div class="flex space-x-6 justify-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-10 h-10 hover:scale-110 transition-transform">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-10 h-10 hover:scale-110 transition-transform">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 hover:scale-110 transition-transform">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10 hover:scale-110 transition-transform">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-10 h-10 hover:scale-110 transition-transform">
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+            <a href="#projects" class="bg-blue-500 px-6 py-2 rounded text-white hover:bg-blue-600 transition-colors text-center">See My Projects</a>
+            <a href="#certificates" class="bg-blue-500 px-6 py-2 rounded text-white hover:bg-blue-600 transition-colors text-center">See My Certificates</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex space-x-6 justify-center">
+            <!-- Instagram -->
+            <a href="https://instagram.com/yourprofile" target="_blank" class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                <i class="fab fa-instagram text-3xl"></i>
+                <span class="text-sm text-gray-400 mt-1">Instagram</span>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/yourprofile" target="_blank" class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                <i class="fab fa-github text-3xl"></i>
+                <span class="text-sm text-gray-400 mt-1">GitHub</span>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                <i class="fab fa-linkedin text-3xl"></i>
+                <span class="text-sm text-gray-400 mt-1">LinkedIn</span>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourprofile" target="_blank" class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                <i class="fab fa-twitter text-3xl"></i>
+                <span class="text-sm text-gray-400 mt-1">Twitter</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen flex flex-col items-center justify-center text-center bg-gray-700 px-6">
+        <img src="assets/pp.jpeg" alt="" class="w-45 h-40 rounded-full shadow-lg mb-4">
+        <h2 class="text-4xl font-bold">About Me</h2>
+        <p class="text-lg mt-2 max-w-2xl">Saya Raffy, seorang Front-End Developer yang berfokus pada pengalaman pengguna
+            dan desain modern. Saya memiliki pengalaman dalam membangun antarmuka yang responsif, estetis, dan mudah
+            digunakan menggunakan teknologi seperti HTML, CSS, JavaScript, dan framework modern seperti React.</p>
+        <p class="text-lg mt-4 max-w-2xl">Selain itu, saya juga memiliki ketertarikan dalam UI/UX Design dan selalu
+            berusaha menciptakan desain yang tidak hanya menarik secara visual tetapi juga intuitif bagi pengguna.</p>
+        <a href="#contact" class="mt-6 bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 nav-link">Contact Me</a>
+    </section>
+
+    <!-- My Projects Section -->
+    <section id="projects" class="py-12 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">My Projects</h2>
+            <p class="text-lg mt-2 mb-8">Berikut beberapa proyek yang pernah saya buat:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/Slicing/tree/main/figma-slicing" target="_blank" class="block">
+                        <img src="assets/project1.png" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Website E-commerce</h3>
+                    <p class="text-gray-400 mb-4">Website untuk penjualan kerajinan tangan.</p>
+                    <a href="https://github.com/Raffy626/Slicing/tree/main/figma-slicing" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/Slicing/tree/main/slicing-e-commerce" target="_blank"
+                        class="block">
+                        <img src="assets/project2.png" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-400 mb-4">Website portofolio pribadi dengan desain responsif.</p>
+                    <a href="https://github.com/Raffy626/Slicing/tree/main/slicing-e-commerce" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank" class="block">
+                        <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Fresh Drink</h3>
+                    <p class="text-gray-400 mb-4">Berbagai macam produk penjualan minuman.</p>
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank" class="block">
+                        <img src="assets/project4.png" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">To-Do List</h3>
+                    <p class="text-gray-400 mb-4">berfungsi seperti noted ketika anda ingin mencatat sesuatu.</p>
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank" class="block">
+                        <img src="assets/Screenshot 2025-02-10 at 12.31.45.png" alt="Project 3"
+                            class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">CARD</h3>
+                    <p class="text-gray-400 mb-4">memiliki desain yang minimalis dan simple</p>
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="h-screen flex flex-col items-center justify-center text-center bg-gray-700 p-8">
+        <h2 class="text-4xl font-bold">Contact Me</h2>
+        <p class="text-lg mt-2">Silakan hubungi saya melalui email: raffypin@gmail.com</p>
+        <a href="mailto:raffypin@gmail.com" class="mt-4 bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Send Email</a>
+
+        <!-- Contact Form -->
+        <div class="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+            <form action="mailto:raffypin@gmail.com" method="POST" enctype="text/plain" class="flex flex-col space-y-4">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="px-4 py-2 rounded bg-gray-900 text-white border border-gray-600 focus:outline-none focus:border-blue-500">
+                <input type="email" name="email" placeholder="Your Email"
+                    class="px-4 py-2 rounded bg-gray-900 text-white border border-gray-600 focus:outline-none focus:border-blue-500">
+                <textarea name="message" placeholder="Your Message"
+                    class="px-4 py-2 rounded bg-gray-900 text-white border border-gray-600 focus:outline-none focus:border-blue-500"></textarea>
+                <button type="submit" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center p-4 mt-4">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
